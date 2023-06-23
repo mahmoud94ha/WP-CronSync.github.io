@@ -1,11 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h2>#ON</h2>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Meetup is a free responsive single page bootstrap template by designerdada.com"
+    />
+    <meta name="author" content="Akash Bhadange" />
+    <title>Meetup: Free Responsive One Page Bootstrap Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/themify-icons.css" rel="stylesheet" />
+    <link href="css/dosis-font.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body id="page-top" data-spy="scroll" data-target=".side-menu">
+    <div class="container-fluid">
+      <!-- Start: Header -->
+      <div class="row hero-header" id="home">
+        <div class="col-md-7">
+          <img src="img/cron.png" class="logo" />
+          <h1>Description</h1>
+          <h3>
+            WordPress cron is a powerful feature that allows you to schedule
+            automated tasks within your WordPress website. In the context of
+            posting articles from XML files, you can utilize WordPress cron to
+            regularly import XML data and automatically create new posts based
+            on the content of those files.
+          </h3>
+          <h3>
+            With the XML data as a source, you can extract relevant information
+            such as article titles, content, categories, filters, and tags. By
+            leveraging WordPress cron, you can set up a scheduled task to run at
+            specified intervals, such as daily or hourly, to fetch the XML data
+            and process it.
+          </h3>
+          <h4>Released Date 06/27/2023</h4>
+          <!-- <a href="#" class="btn btn-lg btn-red">Buy Tickets Now <span class="ti-arrow-right"></span></a> -->
+        </div>
+        <div class="col-md-5 hidden-xs">
+          <img src="img/rocket.png" class="rocket animated bounce" />
+        </div>
+      </div>
+      <!-- End: Header -->
+    </div>
+    <div class="container">
+      <!-- Start: Desc -->
+      <div class="row me-row content-ct">
+        <h2 class="row-title">Featured</h2>
+        <div class="col-md-4 feature">
+          <span class="ti-ticket"></span>
+          <h3>File Monitoring</h3>
+          <p>
+            The cron job should regularly monitor a specific directory or file location for new XML files. It can check for new files at a defined interval, such as every hour or every day.
+          </p>
+        </div>
+        <div class="col-md-4 feature">
+          <span class="ti-microphone"></span>
+          <h3>XML Parsing</h3>
+          <p>
+            When a new XML file is detected, the cron job should parse its contents to extract relevant data. This involves reading and extracting information from the XML file, such as post title, content, tags, categories, and any other necessary metadata.
+          </p>
+        </div>
+        <div class="col-md-4 feature">
+          <span class="ti-microphone"></span>
+          <h3>Data Transformation</h3>
+          <p>
+            After parsing the XML file, the cron job needs to transform the extracted data into a format compatible with WordPress posts. This may include converting data types, reformatting content, sanitizing input, or performing any necessary adjustments to ensure the data is suitable for creating WordPress posts.
+          </p>
+        </div>
+        <div class="col-md-4 feature">
+          <span class="ti-microphone"></span>
+          <h3>WordPress Integration</h3>
+          <p>
+            Once the data is transformed, the cron job should interact with the WordPress API or database to create new posts. It needs to handle authentication, establish a connection with the WordPress installation, and utilize the appropriate APIs or database queries to insert the transformed data as new posts.
+          </p>
+        </div>
+        <div class="col-md-4 feature">
+          <span class="ti-microphone"></span>
+          <h3>Error Handling and Logging</h3>
+          <p>
+            The cron job should implement robust error handling mechanisms to handle any issues that may arise during the import process. It should log errors, such as failed XML parsing, connection errors with WordPress, or any other potential problems encountered during the execution.
+          </p>
+        </div>
+        <div class="col-md-4 feature">
+          <span class="ti-world"></span>
+          <h3>Scheduling and Automation</h3>
+          <p>
+            Finally, the cron job should be configurable to run at specific intervals according to your requirements. You can set the cron job to execute hourly, daily, weekly, or based on any other schedule that suits your needs. Additionally, it should have the capability to run automatically without requiring manual intervention.
+          </p>
+        </div>
+      </div>
+      <!-- End: Desc -->
+
+      <!-- Start: Speakers -->
+      <div class="row me-row content-ct speaker d-flex justify-content-center" id="speakers">
+        <h2 class="row-title">Author</h2>
+
+        <div class="col-md-4 col-sm-6 feature ">
+          <img src="img/speaker-6.png" class="speaker-img" />
+          <h3>Mahmoud Hannani</h3>
+          <p>
+            Software engineer Student at Holberton School.
+          </p>
+          <ul class="speaker-social">
+            <li>
+              <a href="https://github.com/mahmoud94ha"><span class="ti-github"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- End: Speakers -->
+    </div>
+
+    <!-- Start: Tickets -->
+    <div class="container-fluid tickets" id="tickets">
+      <div class="row me-row content-ct">
+        <h2 class="row-title">Video Demo</h2>
+        <div class="col-md-12 col-sm-12 d-flex justify-content-center">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/lTxn2BuqyzU"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+    <script src="js/validator.js"></script>
+  </body>
 </html>
